@@ -108,7 +108,6 @@
   /*cursor: zoom-in;                                                ORGANIZAR EL ZOOM*/
   transition: filter 0.5s;
 }
-
 .sPss:hover {
   filter: brightness(1) drop-shadow(0 0 8px rgba(253, 2, 2, 0.377));
 }
@@ -185,7 +184,30 @@
 .contactos {
   height: 18%;                                                           /* +18% de altura */
   display: flex;
-  flex-direction: row-reverse;
+}
+
+.contacto1 {
+  margin: auto auto 0 auto;
+  display: flex;
+  width: 50%;
+  height: 90%;
+  text-decoration: none;
+  transition: filter 0.5s;
+}
+.contacto1:hover {
+  filter: brightness(1) drop-shadow(0 0 10px rgb(253, 2, 2));
+}
+
+.whatsapp{
+  margin: auto  1vw auto auto;
+  width: 6vw;
+}
+
+.contacto1h3{
+  font-family: hack;
+  font-size: 4vw;
+  margin: auto auto auto 0;
+  color: white;
 }
 
 .contacto2 {
@@ -195,17 +217,35 @@
   background: rgb(0, 0, 0);
   display: flex;
   clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  text-decoration: none;
+}
+.contacto2:hover {
+  .tel{
+    filter: brightness(1) drop-shadow(0 0 5px rgb(255, 1, 1));
+  }
+  .contacto2h3{
+    filter: brightness(1) drop-shadow(0 0 5px rgb(255, 0, 0));
+  }
+}
+
+.tel{
+  transition: filter 0.5s;
+  margin: auto  1vw auto auto;
+  width: 5vw;
+}
+
+.contacto2h3{
+  font-family: hack;
+  font-size: 4vw;
+  margin: auto auto auto 0;
+  color: white;
+  transition: filter 0.5s;
 }
 
 .pie {
   height: 10%;                                                                    /* +10% de altura */
   display: flex;
   background: rgb(0, 0, 0);
-}
-
-@font-face {
-  font-family: airstrike;
-  src: url('./Assets/Fonts/airstrike.ttf');
 }
 
 .pie1 {
@@ -271,30 +311,70 @@
   }
 }
 
-@media (max-width: 600px) {
-  .tool {
-    width: 14vw;
-  }
-
-  .titleServicioh1 {
-    font-size: 5vw;
-    width: min-content;
-  }
-
-  .logo {
-    width: 25vh;
-  }
-
+@media (max-width: 900px) {
   .divServicios {
     flex-direction: column;
   }
-
+  .sPss {
+    width: 37vw;
+  }
   .servicios {
     width: 90vw;
     margin: 0 auto;
   }
   .servicio{
     font-size: 2.8vw;
+  }
+  .divResumenCorreo{
+    flex-direction: column;
+  }
+  .resumen{
+    width: 90%;
+    margin: auto;
+  }
+  .correo{
+    margin: auto;
+  }
+  .gmail{
+    width: 5vw;
+  }
+  .correoh1 {
+    font-size: 3.2vw;
+  }
+  .contacto1{
+    flex-direction: column;
+  }
+  .whatsapp{
+    margin: auto auto 1vw auto;
+    width: 8vw;
+  }
+  .contacto1h3{
+    margin: 1vw auto auto auto;
+    font-size: 5vw;
+  }
+  .contacto2{
+    flex-direction: column;
+  }
+  .tel{
+    margin: auto auto 1vw auto;
+    width: 8vw;
+  }
+  .contacto2h3{
+    margin: 1vw auto auto auto;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .tool {
+    width: 14vw;
+  }
+  .titleServicioh1 {
+    font-size: 5vw;
+    width: min-content;
+  }
+  .logo {
+    width: 25vh;
   }
   .resumenh3{
     width: 98%;
@@ -310,7 +390,7 @@
     width: 20vh;
   }
   .sPss {
-    width: 37vw;
+    width: 55vw;
   }
   .servicio{
     font-size: 3.5vw;
@@ -319,7 +399,7 @@
 
 @media (max-width: 400px) {
   .sPss {
-    width: 47vw;
+    width: 60vw;
   }
   .servicios {
     width: 85vw;

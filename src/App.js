@@ -3,6 +3,8 @@ import logo from "./Assets/Img/logo.png";
 import tool from "./Assets/Img/tool.png";
 import sPss from "./Assets/Img/sPss.png";
 import gmail from "./Assets/Img/gmail.png";
+import whatsapp from "./Assets/Img/whatsapp.png";
+import tel from "./Assets/Img/tel.png";
 
 function App() {
   return (
@@ -50,10 +52,14 @@ function App() {
       </div>
 
       <div className="contactos">
-        <div className="contacto1">
-        </div>
-        <div className="contacto2">
-        </div>
+        <a href="https://wa.link/4wch7y" className="contacto1">
+          <img src={whatsapp} alt="whatsapp" className="whatsapp" />
+          <h3 className="contacto1h3">313 567 8762</h3>
+        </a>
+        <a className="contacto2" href="tel:+573015885116">
+          <img src={tel} alt="tel" className="tel" />
+          <h3 className="contacto2h3">301 588 5116</h3>
+        </a>
       </div>
 
       <div className="pie">
