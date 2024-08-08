@@ -1,38 +1,351 @@
 .App {
   text-align: center;
+  background-image: url("./Assets/Img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  height: 10%;                                                                    /* +10% de altura */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: airstrike;
+  src: url('./Assets/Fonts/airstrike.ttf');
+}
+
+.title1 {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  margin: 0 auto 0 0;
+  background: rgb(192, 3, 3);
+  width: 40%;
+  display: flex;
+  height: 100%;
+}
+
+.title1h1 {
+  margin: auto;
   color: white;
+  font-size: 6vw;
+  font-family: airstrike;
 }
 
-.App-link {
-  color: #61dafb;
+.title2 {
+  margin: 0 0 0 auto;
+  width: 50%;
+  display: flex;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title2h1 {
+  font-family: airstrike;
+  color: rgb(192, 3, 3);
+  margin: auto;
+  font-size: 6vw;
+  font-family: airstrike;
+}
+
+.titleSub {
+  height: 18%;                                                           /* +18% de altura */
+  display: flex;
+}
+
+.titleServicio {
+  height: 90%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  width: 50%;
+}
+
+.tool {
+  margin: auto 0 auto auto;
+  width: 7vw;
+}
+
+@font-face {
+  font-family: conthrax;
+  src: url('./Assets/Fonts/conthrax-sb.otf');
+}
+
+.titleServicioh1 {
+  font-family: conthrax;
+  margin: auto auto auto 0;
+  color: rgb(209, 207, 207);
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+@keyframes destello {
+
+  0%,
+  100% {
+    filter: brightness(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    filter: brightness(1.1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+  }
+}
+
+.logo {
+  margin: auto;
+  width: 30vh;
+  animation: destello 1.5s infinite ease-in-out;
+}
+
+.divServicios {
+  height: 32%;                                                           /* +32% de altura */
+  display: flex;
+}
+
+.sPss {
+  margin: auto;
+  width: 28vw;
+  /*cursor: zoom-in;                                                ORGANIZAR EL ZOOM*/
+  transition: filter 0.5s;
+}
+
+.sPss:hover {
+  filter: brightness(1) drop-shadow(0 0 8px rgba(253, 2, 2, 0.377));
+}
+
+.servicios {
+  width: 60vw;
+  margin: auto auto 0 auto;
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url('./Assets/Fonts/coolveticarg.otf');
+}
+
+.servicio {
+  font-size: 2.4vw;
+  color: white;
+  font-family: coolvetica;
+  text-align: left;
+}
+
+.divResumenCorreo{
+  height: 12%;
+  display: flex;
+}
+
+@font-face {
+  font-family: Hack;
+  src: url('./Assets/Fonts/Hack.ttf');
+}
+.resumen{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.resumenh3{
+  width: 90%;
+  margin: auto;
+  font-family: Hack;
+  font-size: 1.4vw;
+  color: red;
+}
+
+.correo{
+  width: 50%;
+  display:flex ;
+}
+
+.aGmail{
+  margin: auto 1.5vw auto auto;
+  width: max-content;
+  height: min-content;
+}
+
+.gmail{
+  margin: 0;
+  width: 3.5vw;
+  cursor:pointer;
+}
+
+.correoh1 {
+  font-family: conthrax;
+  margin: auto auto auto 0;
+  color: rgb(98, 127, 255);
+  font-size: 2.5vw;
+  text-decoration: underline;
+  cursor:pointer;
+}
+.correoh1:hover{
+  color: rgb(25, 67, 252);
+}
+
+.contactos {
+  height: 18%;                                                           /* +18% de altura */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contacto2 {
+  margin: auto 0 0 auto;
+  height: 90%;
+  width: 50%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.pie {
+  height: 10%;                                                                    /* +10% de altura */
+  display: flex;
+  background: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: airstrike;
+  src: url('./Assets/Fonts/airstrike.ttf');
+}
+
+.pie1 {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin: 0 0 0 auto;
+  background: rgb(192, 3, 3);
+  width: 40%;
+  display: flex;
+  height: 100%;
+}
+
+.pie1h1 {
+  margin: auto;
+  color: rgb(251, 255, 0);
+  font-size: 6vw;
+  font-family: airstrike;
+}
+
+.pie2 {
+  margin: 0 0 0 auto;
+  width: 60%;
+  display: flex;
+  height: 100%;
+}
+
+.pie2h1 {
+  font-family: airstrike;
+  color: rgb(192, 3, 3);
+  margin: auto;
+  font-size: 6vw;
+  font-family: airstrike;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+@media (max-width: 1900px){
+  .sPss {
+    width: 25vw;
+  }
+  .resumenh3{
+    width: 98%;
+    font-size: 1.3vw;
+  }
+  .servicios{
+    margin: auto;
+  }
+  .servicio{
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .servicios {
+    margin: auto;
+  }
+  .resumenh3{
+    width: 95%;
+    font-size: 1.6vw;
+  }
+  .pie2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tool {
+    width: 14vw;
+  }
+
+  .titleServicioh1 {
+    font-size: 5vw;
+    width: min-content;
+  }
+
+  .logo {
+    width: 25vh;
+  }
+
+  .divServicios {
+    flex-direction: column;
+  }
+
+  .servicios {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .servicio{
+    font-size: 2.8vw;
+  }
+  .resumenh3{
+    width: 98%;
+    font-size: 2.2vw;
+  }
+  .pie2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 20vh;
+  }
+  .sPss {
+    width: 37vw;
+  }
+  .servicio{
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .sPss {
+    width: 47vw;
+  }
+  .servicios {
+    width: 85vw;
+  }
+  .servicio{
+    font-size: 3.8vw;
+  }
+  .resumenh3{
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo {
+    width: 15vh;
+  }
+  .sPss {
+    width: 55vw;
+  }
+  .servicios {
+    width: 82vw;
+  }
+  .servicio{
+    font-size: 4.6vw;
+  }
+  .resumenh3{
+    font-size: 2.9vw;
   }
 }
